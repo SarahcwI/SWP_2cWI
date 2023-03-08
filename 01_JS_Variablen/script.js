@@ -28,4 +28,4 @@ b= a + 3
 console.log(b);
 
 c = c-3
-console.log(c);
+console.log(c); 
