@@ -3,10 +3,10 @@
 let number = 70;
 
 if (number < 25) {
-    console.log("Die Zahl ist größer als 20") 
+    console.log("Die Zahl ist größer als 20")
 }
 
-else if (number < 50){
+else if (number < 50) {
     console.log("kleiner als 50 " + number)
 }
 
@@ -39,5 +39,21 @@ if (number3 > 50) {
 //Aufgabe 2
 
 // Wenn die Zahl kleiner gleich 7 ist gib aus "Mini"
+let number4 = 3;
+if (number4 <= 7) {
+    console.log("Mini");
+}
+
+
 // Wenn die Zahl zwischen 7 und 90 ist gib  aus "Medium"
+let number5 = 77;
+if (number5<90 && number5>7) {
+    console.log("Medium");
+}
+
+
 // Wenn die Zahl größer als 90 ist gib aus "Large"
+let number6 = 100;
+if (number6 > 90) {
+    console.log("Large");
+}
