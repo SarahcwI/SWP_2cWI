@@ -21,11 +21,11 @@ array.push(17);
 array.push(199);
 
 //a
-/*
+
 for (let index = 0; index < array.length; index++) {
     console.log(array[index]);
     
-}*/
+}
 
 
 //b 
@@ -45,4 +45,15 @@ for(let index3 = 0; index3 < array.length; index3++) {
     summe2 += array[index3];
     
 }
-console.log("Mittelwert: " + summe2/6);
+console.log("Mittelwert: " + summe2/6)
+
+
+//Aufgabe 2
+
+let arr = ["Susi ", "Paula ", "Hans "];
+let output = ""
+for (let index4 = 0; index4 < arr.length ; index4++) {
+    
+    output += arr[index4] }
+    console.log ("Meine Freunde sind " + output); 
+    
