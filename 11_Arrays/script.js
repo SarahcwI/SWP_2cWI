@@ -48,7 +48,7 @@ for(let index3 = 0; index3 < array.length; index3++) {
 console.log("Mittelwert: " + summe2/6)
 
 
-//Aufgabe 2
+//Aufgabe  2
 
 let arr = ["Susi ", "Paula ", "Hans "];
 let output = ""
