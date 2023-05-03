@@ -50,10 +50,25 @@ console.log("Mittelwert: " + summe2/6)
 
 //Aufgabe  2
 
-let arr = ["Susi ", "Paula ", "Hans "];
-let output = ""
+let arr = ["Susi", "Paula", "Hans"];
+let output = "";
+
 for (let index4 = 0; index4 < arr.length ; index4++) {
     
-    output += arr[index4] }
-    console.log ("Meine Freunde sind " + output); 
+    output += arr[index4];
+
+    if (index4%1 == 0){
+        console.log(output += ", ")
+    }
+    
+   if (index4==arr.length-2){
+        console.log ( output + "und ");    
+    }
+
+  
+}
+
+
+//console.log (output); 
+
     

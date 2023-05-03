@@ -13,9 +13,9 @@ else {
 
 
 //Aufgabe 1
-for (let index = 1; index < 21; index++) {
-    console.log("xxxx");
-    if (index%5==0) {
+for (let index = 1; index < 3; index++) {
+    console.log("XXXX");
+    if (index%1==0) {
         console.log("OOOO");
     }
 }
@@ -25,7 +25,7 @@ let summe = 0;
 for(let number = 1; number <= 100; number++) {
     if (number%2==0) {
         summe += number;
-        console.log(summe);
+        //console.log(summe);
     }
 }
 console.log("Die Summe ist: " + summe);
