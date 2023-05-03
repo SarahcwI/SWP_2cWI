@@ -58,17 +58,17 @@ for (let index4 = 0; index4 < arr.length ; index4++) {
     output += arr[index4];
 
     if (index4%1 == 0){
-        console.log(output += ", ")
+        output += ", "
     }
     
    if (index4==arr.length-2){
-        console.log ( output + "und ");    
+        output += "und " 
     }
 
   
 }
 
 
-//console.log (output); 
+console.log (output); 
 
     
