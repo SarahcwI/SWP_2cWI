@@ -29,7 +29,7 @@ for (let index = 0; index < array.length; index++) {
 
 
 //b 
-let summe = 0
+let summe = 0;
 for(let index2 = 0; index2 < array.length; index2++) {
       
     summe += array[index2];
@@ -45,30 +45,36 @@ for(let index3 = 0; index3 < array.length; index3++) {
     summe2 += array[index3];
     
 }
-console.log("Mittelwert: " + summe2/6)
+console.log("Mittelwert: " + summe2/array.length)
 
 
 //Aufgabe  2
 
 let arr = ["Susi", "Paula", "Hans"];
+arr.push("Sepp");
+
 let output = "";
 
 for (let index4 = 0; index4 < arr.length ; index4++) {
     
     output += arr[index4];
 
-    if (index4%1 == 0){
+    if ((index4%1 == 0) && (index4 != arr.length-2 )){
         output += ", "
     }
     
    if (index4==arr.length-2){
-        output += "und " 
+        output += " und " 
     }
 
+    if (index4 == arr.length-1) {
+        output += "."
+    }
+   
   
 }
 
 
-console.log (output); 
+console.log ("Meine Freunde sind " + output); 
 
     

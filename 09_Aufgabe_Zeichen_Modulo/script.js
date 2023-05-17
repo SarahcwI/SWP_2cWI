@@ -14,9 +14,11 @@ else {
 
 //Aufgabe 1
 for (let index = 1; index < 3; index++) {
-    console.log("XXXX");
-    if (index%1==0) {
-        console.log("OOOO");
+    if (index%2==0) {
+    console.log("XXXX")}
+
+    if (index%3!=0) {
+    console.log("OOOO");
     }
 }
 
@@ -33,7 +35,7 @@ console.log("Die Summe ist: " + summe);
 //Aufgabe 3
 
 for(let name=1; name <=20; name++) {
-    if (name==1) {
+    if (name%20==0) {
         console.log(" XXXX");
         console.log("X    X");
         console.log("X    ");
@@ -44,6 +46,7 @@ for(let name=1; name <=20; name++) {
     }
 
 }
+
 
 /*
  XXXX
