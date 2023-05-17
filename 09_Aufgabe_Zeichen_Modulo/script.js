@@ -13,11 +13,11 @@ else {
 
 
 //Aufgabe 1
-for (let index = 1; index < 3; index++) {
-    if (index%2==0) {
+for (let index = 1; index < 5; index++) {
+    if (index%2!=0) {
     console.log("XXXX")}
 
-    if (index%3!=0) {
+    if (index%2==0) {
     console.log("OOOO");
     }
 }
