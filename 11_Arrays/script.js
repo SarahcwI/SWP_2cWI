@@ -59,7 +59,7 @@ for (let index4 = 0; index4 < arr.length ; index4++) {
     
     output += arr[index4];
 
-    if ((index4%1 == 0) && (index4 != arr.length-2 )){
+    if ((index4%1 == 0) && (index4 == arr.length-3 )){
         output += ", "
     }
     
