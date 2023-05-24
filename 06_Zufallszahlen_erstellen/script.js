@@ -1,4 +1,6 @@
 let randomNumber = Math.random() * 10 + 10;
 let random = Math.floor(randomNumber);
+let ausgabe = "";
 
-console.log(random);
+ausgabe + random 
+console.log(ausgabe);
