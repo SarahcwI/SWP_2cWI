@@ -15,60 +15,52 @@ const readLineAsync = () => {
   });
 };
 
+let balance = 0;
 
+while (true) {
+  printMenu();
+  let userInput = await readLineAsync();
 
+  if (userInput == 1) {
+    console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:");
+    let inputOfUserEinzahlung = await readLineAsync();
+    balance += parseFloat(inputOfUserEinzahlung);
 
-
-
-for (let i = 0; i < 10; i++) {
-
-
-  let Eingabe = await readLineAsync();
-  let balance = "";
-  
-
-  if (Eingabe == 1) {
-
-    for (let j = 0; j < 1; j++) {
-    
-      console.log("Geben Sie den Betrag ein den Sie einzahlen möchten:");
-      let inputOfUserEinzahlung = await readLineAsync();
-      balance += parseInt(inputOfUserEinzahlung);
-  
-      console.log("Sie haben " + inputOfUserEinzahlung + " Euro eingezahlt");
-  
-  
-    }
-
-  
-   
-    }
-
-console.log("Ihr Kontostand beträgt: " + Kontostand);
-  
-
-
-
-  /*else if (Eingabe == 2) {
-    console.log("Geben Sie den Betrag ein den Sie abheben möchten:");
-    let inputOfUserAbhebung = await readLineAsync();
-
-    balance -= inputOfUserAbhebung;
-
-    console.log("Sie haben " + inputOfUserAbhebung + " Euro abgehoben");
+    console.log("Sie haben " + inputOfUserEinzahlung + " Euro eingezahlt");
   }
 
-
-  else if (Eingabe == 3) {
+  if (userInput == 2) {
     console.log("Ihr Kontostand beträgt: " + balance);
   }
 
 
-  else if (Eingabe == 4) {
-    console.log("Maschine stoppt!");
-    readline.close();
-  }
-*/
-
   console.log("-----------");
 }
+
+
+function printMenu(){
+  console.log("1 Einzahlen");
+}
+
+
+/*else if (Eingabe == 2) {
+  console.log("Geben Sie den Betrag ein den Sie abheben möchten:");
+  let inputOfUserAbhebung = await readLineAsync();
+
+  balance -= inputOfUserAbhebung;
+
+  console.log("Sie haben " + inputOfUserAbhebung + " Euro abgehoben");
+}
+
+
+else if (Eingabe == 3) {
+  console.log("Ihr Kontostand beträgt: " + balance);
+}
+
+
+else if (Eingabe == 4) {
+  console.log("Maschine stoppt!");
+  readline.close();
+}
+*/
+
