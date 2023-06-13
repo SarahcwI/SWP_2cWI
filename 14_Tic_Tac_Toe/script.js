@@ -1,3 +1,22 @@
+import { log } from "console";
+import { createInterface } from "readline";
+
+const readline = createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+const readLineAsync = () => {
+  return new Promise((resolve) => {   
+    readline.question("", (userRes) => {
+      resolve(userRes);
+      //
+    });
+  });
+};
+
+
+
 let field = [
     [0,0,0],
     [0,0,0],
