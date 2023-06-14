@@ -18,45 +18,68 @@ const readLineAsync = () => {
 
 
 let field = [
-    [0,0,0],
-    [0,0,0],
-    [0,0,0]
+  [0,0,0],
+  [0,0,0],
+  [0,0,0]
 ];
 
 //console.log(field[2][2]);
 
-let inputPlayerRow = 2;
-let inputPlayerCol = 1;
+//let inputPlayerRow = 2;
+//let inputPlayerCol = 1;
 
-field[inputPlayerRow][inputPlayerCol] = 0;
+//field[inputPlayerRow][inputPlayerCol] = 0;
 
-printField();
+
 
 function printField(){
-    for (let row=0; row < field.length; row++){
-        let actualRow = field[row];
-        let output = "";
-        for(let col = 0; col<actualRow.length; col++){
-            //console.log(actualRow[col]);
-            let sign=" ";
-            if (actualRow[col] == 1){
-                sign="X";
-            }
-            else if (actualRow[col] == 2){
-                sign ="O";
-            }
-            output += sign + "|";
-        }
-        console.log(output);
-    }
+  for (let row=0; row < field.length; row++){
+      let actualRow = field[row];
+
+      let output = "";
+      for(let col = 0; col<actualRow.length; col++){
+          //console.log(actualRow[col]);
+          let sign=" ";
+          if (actualRow[col] == 1){
+              sign="X";
+          }
+          else if (actualRow[col] == 2){
+              sign ="O";
+          }
+          output += sign + "|";
+      }
+      console.log(output);
+  }
+}
+
+
+let playerPlaying = 0;
+
+for (let county = 0; county <9; county++) {
+  if (county%2==0){
+      playerPlaying = 1;
+  }
+  
+  else{playerPlaying = 2;}
+  
+  console.log(playerPlaying);
+
+  console.log("Reihe:");
+  let inputPlayerRow = await readLineAsync();
+  console.log("Spalte:"); 
+  let inputPlayerColumn = await readLineAsync();
+  
+  field[inputPlayerRow][inputPlayerColumn] = playerPlaying;
+  printField();   
+  
+
+ 
 }
 
 
 
 
-console.log("Enter your name");
-let inputOfUser = await readLineAsync();
-console.log("Your name is " + inputOfUser);
+
 
 
 readline.close();
