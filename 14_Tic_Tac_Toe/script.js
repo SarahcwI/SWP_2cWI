@@ -16,7 +16,6 @@ const readLineAsync = () => {
 };
 
 
-
 let field = [
   [0,0,0],
   [0,0,0],
@@ -24,10 +23,8 @@ let field = [
 ];
 
 //console.log(field[2][2]);
-
 //let inputPlayerRow = 2;
 //let inputPlayerCol = 1;
-
 //field[inputPlayerRow][inputPlayerCol] = 0;
 
 
@@ -38,7 +35,6 @@ function printField(){
 
       let output = "";
       for(let col = 0; col<actualRow.length; col++){
-          //console.log(actualRow[col]);
           let sign=" ";
           if (actualRow[col] == 1){
               sign="X";
@@ -48,22 +44,20 @@ function printField(){
           }
           output += sign + "|";
       }
-      console.log(output);
+    console.log(output);
   }
 }
 
 
 let playerPlaying = 0;
 
-for (let county = 0; county <9; county++) {
-  if (county%2==0){
+for (let counter = 0; counter <9; counter++) {
+  if (counter%2==0){
       playerPlaying = 1;
   }
-  
   else{playerPlaying = 2;}
-  
-  console.log(playerPlaying);
 
+  console.log(playerPlaying);
   console.log("Reihe:");
   let inputPlayerRow = await readLineAsync();
   console.log("Spalte:"); 
@@ -71,16 +65,7 @@ for (let county = 0; county <9; county++) {
   
   field[inputPlayerRow][inputPlayerColumn] = playerPlaying;
   printField();   
-  
-
- 
 }
-
-
-
-
-
-
 
 readline.close();
 
